@@ -73,19 +73,14 @@ const eventData = {
     ]
   };
   
-function basket1Price() {
-    for (let i = 0; i < eventData.ticketTypes.length; i++) {
-      if (eventData.ticketTypes[i].name === "Basket 1") {
-        return eventData.ticketTypes[i].price;
-      }
-    }
-    return "Ticket not found";
+  function firstBasketPrice() {
+    return eventData.ticketTypes[0].price
   }
+ console.log("First Basket Ticket Price:", firstBasketPrice());
   
-  console.log("Price of Basket 1 Ticket:", basket1Price());
-
+  
 function eventStartDate () {
-    eventData.startsAtUtc;
+  return  eventData.startsAtUtc;
 }
 
 console.log("Event Starts Date:", eventStartDate());
